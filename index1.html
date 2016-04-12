@@ -1,0 +1,477 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!-- Grupo CSS -->
+<link rel="stylesheet" href="css/app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!-- Grupo JavaScript -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/engrillados.jpg','imagenes/atlixco.jpg','imagenes/atlixco2.jpg','imagenes/atlixco1.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>INFORMACION DE LA SEMANA SANTA</h1>
+   
+  <div>
+  <center>
+    <img src="imagenes/semanasanta.jpg" width="90%" height="45%"> 
+    </center>
+   </div>
+  </div>
+   
+<div>
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+   
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Significado de la Semana Santa</h2> 
+     </a>
+   </li>
+   
+    <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Domingo de Pascua</h2>
+       </a>
+     </li>
+     
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2> Como se establece la Semana Santa </h2>
+      </a>
+    </li> 
+    
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Celebracion en Atlixco</h2>
+      </a>
+    </li> 
+   <li class="ui first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Iztapalapa</h2>
+       </a>
+      </li> 
+      
+       <li class="ui first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Vaticano</h2>
+       </a>
+      </li> 
+      
+       <li class="ui first-child ui-last-child">
+       <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Jerusalén</h2>
+       </a>
+      </li> 
+      
+       <li class="ui first-child ui-last-child">
+       <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2> Sevilla</h2>
+       </a>
+      </li>
+      
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+  <div>
+     <img src="imagenes/persona_azul.png" width="46" height="46">
+  </div>
+   <div>
+     <h4>Aplicacion Dos</h4>
+     <h4>Alejandro Aguilar Coyotl</h4>
+   </div>
+</div>
+</div>    
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Significado de la Semana Santa</h1>
+   </div>
+  
+  <div data-role="content" align="center">
+   <div>
+   
+      <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1> Domingo de Ramos </h1>
+      <div>
+      <br>
+      </div>
+        
+  <div>
+    <img src="imagenes/semana2.jpg" width="30%" height="30%"> </div>
+     <p> 
+   La Semana Santa es una observación religiosa que se enfoca en la muerte y resurrección de Jesucristo. Esta celebración cristiana ocurre durante la temporada de la Pascua y es de suma importancia porque es cuando se recuerdan los eventos principales que forman la base de esta fe.La Semana Santa comienza con el Domingo de Ramos.
+   </p>
+   </div>
+   </div>
+   
+        <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Jueves Santo </h1>
+      <div>
+      <br>
+      </div>
+      <div>
+    <img src="imagenes/semana3.jpg" width="30%" height="30%"> </div>
+     <p> 
+  El Jueves Santo es una fiesta cristiana que se celebra el jueves anterior al Domingo de Resurrección, dentro de la Semana Santa, y que abre el Triduo Pascual. En este día la Iglesia católica conmemora la institución de la Eucaristía en la Última Cena y el lavatorio de los pies realizado por Jesús.
+   </p>
+       
+   </div>
+   </div>
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Viernes Santo </h1>
+      <div>
+      <br>
+      </div>
+      <div>
+    <img src="imagenes/semana1.jpg" width="30%" height="30%"> </div>
+     <p> 
+ El Viernes Santo es una de las principales celebraciones del Cristianismo, dentro de la denominada Semana Santa. Este día se recuerda la muerte de Jesús de Nazaret.
+En este día, la Iglesia Católica manda a sus fieles guardar ayuno y abstinencia de carne como penitencia.
+   </p>
+    </div>
+   </div>
+   
+    <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Sabado de Gloria</h1>
+      <div>
+      <br>
+      </div>
+      <div>
+    <img src="imagenes/semana11.jpg" width="30%" height="30%"> </div>
+     <p> 
+ El Sábado Santo es el nombre que algunas denominaciones cristianas dan al sábado de la semana del primer plenilunio de primavera. Es el tercer día del Triduo Pascual, que concluye con las primeras Vísperas del Domingo de Resurrección culminando así para los cristianos la Semana Santa. Tras conmemorar el día anterior la muerte de Cristo en la Cruz, se espera el momento de la Resurrección.
+   </p>
+    </div>
+   </div>
+    <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Domingo de Resureccion</h1>
+      <div>
+      <br>
+      </div>
+      <div>
+    <img src="imagenes/semana12.jpg" width="30%" height="30%"> </div>
+     <p> 
+El Domingo de Resurrección, es el día en que Jesucristo resucita después de la crucifixión, va al encuentro con sus apóstoles y luego sube hacia los cielos, también es la finalización de la Semana Santa.
+El Domingo de Resurrección o de Pascua es importante para los católicos, ya que con la Resurrección es cuando adquiere sentido toda su religión.
+   </p>
+    </div>
+   </div>
+  <div data-role="footer" data-theme="a">
+    <h4> Alejandro Aguilar Coyotl</h4>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Domingo de Pascua</h1>
+ </div>
+ 
+ <div data-role="content" align="center">
+  
+   </div>
+  <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Domingo de Pascua</h1>
+      <div>
+      <br>
+      </div>
+      <div>
+    <img src="imagenes/pascua.jpg" width="30%" height="30%"> </div>
+     <p> 
+El Domingo de Pascua es una celebración que no se fija en relación al calendario civil. 2 El Primer Concilio de Nicea (año 325) estableció la fecha de la Pascua como el primer domingo después de la luna llena tras el equinoccio de primavera en el hemisferio norte.8 La fecha por tanto, varía entre el 22 de marzo y el 25 de abril.9 10 El cristianismo oriental basa sus cálculos en el calendario juliano, por lo que su fecha se sitúa entre el 4 de abril y 8 de mayo.
+   </p>
+    </div>
+   </div>   
+   <div data-role= "footer" data-theme="a">
+     <h4>Alejandro Aguilar Coyotl</h4>
+ </div>
+ </div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Como se establece la Semana Santa</h1>
+ </div>
+ <div data-role="content" align="center">
+  
+   </div>
+   <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Como se establece la Semana Santa</h1>
+      <div>
+      <br>
+      </div>
+      <div>
+   <p>
+   La Semana Santa es la conmemoración anual cristiana de la Pasión, Muerte y Resurrección de Jesús de Nazaret. Por eso, es un período de intensa actividad litúrgica dentro de las diversas confesiones cristianas. Da comienzo el Domingo de Ramos y finaliza el Domingo de Resurrección,1 aunque su celebración suele iniciarse en varios lugares el viernes anterior (Viernes de Dolores) y se considera parte de la misma el Domingo de Resurrección. La fecha de la celebración es variable (entre marzo y abril según el año) ya que depende del calendario lunar. La Semana Santa va precedida por la Cuaresma, que finaliza en la Semana de Pasión donde se celebra la eucaristía en el Jueves Santo, se conmemora la Crucifixión de Jesús el Viernes Santo y la Resurrección en la Vigilia Pascual durante la noche del Sábado Santo al Domingo de Resurrección. Durante la Semana Santa tienen lugar numerosas muestras de religiosidad popular a lo largo de todo el mundo, destacando las procesiones y las representaciones de la Pasión.2
+   </p>
+</div>
+</div>
+     <div data-role= "footer" data-theme="a">
+       <h4>Alejandro Aguilar Coyotl</h4>
+     </div>
+     <p>&nbsp;</p>
+   </div>
+</div>
+  
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Celebracion en Atlixco</h1>
+  </div>
+ <div data-role="content" align="center">
+   
+  </div>
+    <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Celebracion en Atlixco</h1>
+      <div>
+      <br>
+      </div>
+      <div>
+      <center>
+      </div>
+    </center>
+     <p> 
+ El Vía Crucis de Atlixco, en el estado de Puebla, en México, reúne desde hace más de un siglo en Semana Santa a un grupo de penitentes capaces de traspasar el umbral del dolor por su devoción, al salir en procesión </p>
+     <p>encapuchados y descalzos, con grilletes y coronas de espinas.     </p>
+     <center>
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/engrillados.jpg',1)"><img src="imagenes/semanasanta.jpg" width="310" height="163" id="Image17"></a></p>
+     </center>
+   <div>
+    
+   </div>
+  
+     <p> 
+“Ya como es tradicional en la iglesia católica, la semana mayor, la semana santa inicia con el domingo de ramos. Queremos celebrar o conmemorar la entrada triunfal de Jesús a Jerusalén, entonces aquí nosotros vamos</p>
+     <p>hacer misas el domingo. En esta parroquia de la asunción, vamos a llevar a cabo la bendición de las palmas”</p>
+     <center>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/atlixco2.jpg',1)"><img src="imagenes/semanasanta.jpg" width="310" height="163" id="Image18"></a>
+     </center>
+     <div>
+      </div>
+     <p> 
+ Invitó a todos los atlixquenses a disfrutar de este tapete con relieve y ser buenos anfitriones, pues hoy como Pueblo Mágico, Atlixco es un excelente polo de desarrollo en materia turística, no solo por su clima o sus flores; sino también por su paisajismo, su historia de más de 406 años, su tradición, sus monumentos históricos, su cultura; entre otros.
+   </p>
+   <center>
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/atlixco.jpg',1)"><img src="imagenes/semanasanta.jpg" width="310" height="163" id="Image16"></a></p>
+     </center>
+   <div>
+   </div>
+     <p> 
+“Es una labor que la iglesia debe apoyar, porque es un acto penitencial el que ellos hacen y para ello se preparan. Creo que es una ofrenda agradable al señor porque es un sacrificio de reconciliación con Dios, pidiéndole perdón por sus pecados y ofreciéndole este acto penitenciario”, señaló el párroco.
+Finalmente invitó a todos los </p>
+     <p>feligreses a participar de estas actividades que con el paso de los años, asegura, se han ido perdiendo.     </p>
+     <center>
+     
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/atlixco1.jpg',1)"><img src="imagenes/semanasanta.jpg" width="310" height="163" id="Image19"></a>
+     <div>
+     </div>
+    </center>
+     <p> 
+Mencionó que como cada año también se llevarán a cabo los ya tradicionales engrillados que recorren las principales calles del municipio de Atlixco con pesadas cadenas y espinas clavadas en el cuerpo. Esto tendrá lugar el día viernes santo a las diez de la mañana, partiendo de la iglesia de la tercera orden.
+   </p>
+   <center>
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/atlixco3.jpg',0)"><img src="imagenes/semanasanta.jpg" width="310" height="163" id="Image15"></a></p>  
+     </center>
+     </div>
+   </div>   
+<div data-role="footer" data-theme="a">
+    <h4> Alejandro Aguilar Coyotl </h4>
+  </div>
+</div>
+</div>
+ 
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Iztapalapa</h1>
+   </div>
+   <div data-role="content" align="center">
+    
+   </div>
+     <p> 
+Una tradición más que año con año se integra a la semana santa es el recorrido de la hora del silencio con la mayordomía de nuestra señora de la soledad el cual se lleva acabo terminando la escenificación del Viernes Santo, tradición que recorre las 8 capillas de los barrios así como la Parroquia de San Lucas y el santuario del señor de la cuevita, en la que los actores y organizadores de la pasión olvidan por unas horas más el cansancio que genera el viacrucis para acompañar fielmente a la imagen por su recorrido, viendo a los apóstoles y vírgenes aun con sus vestuarios y a quien personifico a Cristo y otros actores ya con ropa civil como un vecino mas de los barrios.
+   </p>  
+        <div>
+        <center>
+    <img src="imagenes/iztapalapa1.jpg" width="30%" height="30%"> </div>
+        </center>
+     <div>
+     <p>
+  En Iztapalapa tiene lugar una ceremonia, fiesta y representación de la Pasión, que no responde ni a una narración sacra, ni a un teatro tradicional: es una expresión de múltiples aportaciones que se funde en una particular sincretización.
+     </p>
+     <center>
+    <img src="imagenes/iztapalapa2.jpg" width="30%" height="30%"> </div>
+     </center>
+     <div>
+     <p>
+     Los moradores de los ocho barrios: La Asunción, San Ignacio, Santa Bárbara, San Lucas, San Pablo, San Miguel, San Pedro y San José, conviven entre la modernidad y la tradición: los que mantienen un ancestral apego a la tierra y los que llegan y demandan un lugar donde vivir. Comparten una costumbre heredada de muchos años, un deseo de mantener la unidad, a través de la cooperación y el esfuerzo colectivo para representar, con gran realismo, la Pasión de Jesucristo en una fiesta que permite la reafirmación y Ia cohesión cultural de sus residentes.
+     </p>
+     <center>
+    <img src="imagenes/iztapalapa3.jpg" width="30%" height="30%"> </div>
+  </center>
+
+   <div data-role="footer" data-theme="a">
+      <h4>Alejandro Aguilar Coyotl</h4>
+   </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Vaticano</h1>
+   </div>
+   <div data-role="content" align="center">
+    
+   </div>
+     <p> 
+       La Iglesia Católica Apostólica Romana es la iglesia católica de mayor número de creyentes en el mundo, los cuales están bajo la autoridad del Pápa. La semana santa, según la tradición de la Iglesia Católica Romana, comienza con el Domingo de Ramos, fecha en que Jesús entra a Jerusalén y es recibido con hojas de palmeras, y termina con el Sábado Santo.
+   </p>  
+        <div>
+        <center>
+    <img src="imagenes/vaticano1.jpg" width="30%" height="30%"> </div>
+        </center>
+     <div>
+     <p>
+  El primer gesto de este amor «hasta el extremo» (Jn 13,1) es el lavatorio de los pies. «El Maestro y el Señor» (Jn 13,14) se abaja hasta los pies de los discípulos, como solamente hacían lo siervos. Nos ha enseñado con el ejemplo que nosotros tenemos necesidad de ser alcanzados por su amor, que se vuelca sobre nosotros; no podemos prescindir de este, no podemos amar sin dejarnos amar antes por él, sin experimentar su sorprendente ternura y sin aceptar que el amor verdadero consiste en el servicio concreto.
+     </p>
+     <center>
+    <img src="imagenes/vaticano2.jpg" width="30%" height="30%"> </div>
+     </center>
+     <div>
+     <p>
+       Oh Cruz de Cristo, enséñanos que el alba del sol es más fuerte que la oscuridad de la noche. Oh Cruz de Cristo, enséñanos que la aparente victoria del mal se desvanece ante la tumba vacía y frente a la certeza de la Resurrección y del amor de Dios, que nada lo podrá derrotar u oscurecer o debilitar. Amén.
+     </p>
+     <center>
+    <img src="imagenes/vaticano3.jpg" width="30%" height="30%"> </div>
+  </center>
+
+   <div data-role="footer" data-theme="a">
+      <h4>Alejandro Aguilar Coyotl</h4>
+   </div>
+ </div>
+</div>
+
+      
+
+     
+     
+     
+  
+<div data-role= "footer" data-theme="a">
+     <h4>Alejandro Aguilar Coyotl</h4>
+ </div>
+</div>
+</div>
+  
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Jerusalén</h1>
+ </div>
+ <div data-role="content" align="center">
+   </div>
+     <p> 
+No hay nada como vivir la Semana Santa en Jerusalén.  Celebrar los grandes eventos de la historia de salvación y de la vida de Jesús en los mismos lugares en los que ocurrieron es una experiencia de fe conmovedora e inolvidable para todos los creyentes.
+   </p>  
+        <div>
+        <center>
+    <img src="imagenes/jerusalen1.jpg" width="30%" height="30%"> </div>
+        </center>
+     <div>
+     <p>
+Oficialmente, Semana Santa comienza al conmemorarse la entrada de Jesús en Jerusalén el Domingo de Ramos (1 de abril), con la misa matinal de las 8 en la Iglesia del Santo Sepulcro y la tradicional procesión de Palmas durante la tarde. Más tarde, a las 14.30, miles de cristianos de todo el mundo marcharán jubilosamente desde Betfagé, rezando y cantando en todos los idiomas, descendiendo por la ladera occidental del Monte de los Olivos en camino a la Ciudad Vieja, a través del valle de Kidrón.
+     </p>
+     <center>
+    <img src="imagenes/jerusalen2.jpg" width="30%" height="30%"> </div>
+     </center>
+     <div>
+     <p>
+    En la Hora Santa, se lleva a cabo una lectura en varios idiomas en la Basílica de la Agonía en Getsemaní, con una procesión de velas encendidas desde Getsemaní hasta el Monte Sión (los católicos). La Iglesia de San Pedro en Galicantu permanece abierta para los feligreses casi toda la noche. Las denominaciones ortodoxas celebran el lavado de pies en el patio del Santo Sepulcro y en sus respectivas iglesias en toda la Ciudad Vieja de Jerusalem.
+     </p>
+     <center>
+    <img src="imagenes/jerusalen3.jpg" width="30%" height="30%"> </div>
+  </center>
+   
+ <div data-role= "footer" data-theme="a">
+     <h4>Alejandro Aguilar Coyotl</h4>
+   </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Sevilla</h1>
+ </div>
+ <div data-role="content" align="center">
+  </div>
+   <p> 
+Hablar de la Semana Santa de Sevilla, es mentar a la capital de Andalucía, centro del descubrimiento de América en la península, asentada en el valle del Guadalquivir, por donde subían las naos desde Sanlúcar en el siglo XVII y XVIII, vivió su siglo de oro en estas fechas. Se afincaron en la capital la aristocracia y los grandes de España, se fundaron iglesias y conventos, para lo cual se rodearon de artistas e imagineros como Roldán o Hita del Castillo y pintores como Zurbarán o Murillo
+   </p>  
+        <div>
+        <center>
+    <img src="imagenes/sevilla1.jpg" width="30%" height="30%"> </div>
+        </center>
+     <div>
+     <p>
+En Semana Santa Sevilla escenifica los diferentes episodios de la Pasión de Jesucristo, impregna sus calles de aromas a azahar e incienso, emociones y pasiones, nostalgias y lagrimas, desde el Domingo de Pasión con la exaltación del Pregón, hasta el Domingo de Resurrección, pasando por el Viernes de Dolores y Sábado de Pasión, días que sirven de antesala a la Semana Grande de Sevilla.
+     </p>
+     <center>
+    <img src="imagenes/sevilla2.jpg" width="30%" height="30%"> </div>
+     </center>
+     <div>
+     <p>
+   Con la llegada del Domingo de Ramos, Sevilla sale a la calle para vivir su Semana Santa, para acompañar a Jesús en su agonía y resurrección, empiezan las Hermandades después de un año de preparación y reflexión, su estación de penitencia. 
+     </p>
+     <center>
+    <img src="imagenes/sevilla3.jpg" width="30%" height="30%"> </div>
+  </center>
+  
+  
+ <div data-role= "footer" data-theme="a">
+     <h4>Alejandro Aguilar Coyotl</h4>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
